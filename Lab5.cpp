@@ -34,6 +34,7 @@ int main() {
 				break;
 			}
 			st.push(*he);
+			delete he;
 			break;
 		}
 		case '2': {
@@ -48,6 +49,7 @@ int main() {
 				break;
 			}
 			st.insert_by_number(N + 1, *he);
+			delete he;
 			break;
 		}
 		case '3': {
