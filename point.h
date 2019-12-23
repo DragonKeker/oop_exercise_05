@@ -16,9 +16,9 @@ std::istream& operator>>(std::istream& is, point<T>& p) {
 }
 
 template<class T>
-std::ostream& operator<<(std::ostream& os, point<T> p) {
-	os << '(' << p.x << ' ' << p.y << ')';
-	return os;
+std::ostream& operator<<(std::ostream& out, point<T> p) {
+	out << '(' << p.x << ' ' << p.y << ')';
+	return out;
 }
 
 #endif
